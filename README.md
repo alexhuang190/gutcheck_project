@@ -1,4 +1,4 @@
-#GutCheck
+# GutCheck
 
 Dual-ultrasonic gutter clog detector with a real-time web dashboard for homeowners.
 
@@ -7,7 +7,7 @@ GutCheck is a low-cost, mountable sensor system that detects gutter clogs before
 Built by Alex Huang, Euvene Kae, Sahej Sachdeva, and Benson Zhang for the Design Thinking and Communication program at Northwestern University's McCormick School of Engineering.
 
 
-##Table of Contents
+## Table of Contents
 
 
 Overview
@@ -25,11 +25,11 @@ License
 
 
 
-##Overview
+## Overview
 
 Clogged gutters cost American homeowners hundreds to thousands of dollars a year in water damage, mold, and foundation repair — most of it preventable if the clog is caught early. GutCheck mounts directly onto an existing gutter (replacing two standard gutter hangers, no major retrofit required) and continuously monitors water flow, flagging clogs before they become expensive problems.
 
-##Features
+## Features
 
 
 - Differential-pair clog detection — two ultrasonic sensors measure water level at two points; the difference between readings indicates a blockage
@@ -40,7 +40,7 @@ Clogged gutters cost American homeowners hundreds to thousands of dollars a year
 - Low cost — full prototype bill of materials is under $100
 
 
-##How It Works
+## How It Works
 
 
 Two IP67 ultrasonic range sensors measure water level at two points along the gutter.
@@ -50,15 +50,15 @@ Differences are bucketed into severity levels (clear → minor → moderate → 
 The React.js dashboard displays a live status indicator per sensor, with the option to expand into detailed graphs and raw readings.
 
 
-##Tech Stack
+## Tech Stack
 
 LayerTechnologyMicrocontrollerESP32 DevKitSensorsIP67 UART Ultrasonic Range SensorsPowerAdafruit Waterproof 3×AA Battery HolderBackend / DBSupabase (PostgreSQL, Supabase Auth)FrontendReact.jsEnclosure3D-printed polycarbonate (PC), silicone-sealed
 
-##Hardware / Bill of Materials
+## Hardware / Bill of Materials
 
 ItemSpecsQtyCostBattery HolderWaterproof 3×AA2$14.64ESP32 DevKit—2$19.89PC Filament—1 kg$29.99BoltsM2x81 bag$6.89Wire16 AWG1$6.89Silicone Seal Strip2mm x 6m1$6.99Threaded InsertsM2x41 bag$9.99Total$95.28
 
-##Getting Started
+## Getting Started
 
 Firmware
 
@@ -79,11 +79,11 @@ Backend
 
 Create a Supabase project, run the schema migrations (if included in docs/ or a supabase/ folder), and enable Supabase Auth.
 
-##Design Requirements
+## Design Requirements
 
 RequirementMetricIdealAllowableDetects clogsDifferential pair measurement>10%±5%WaterproofMock IP ratingIP54IP42Secure when attachedShake testDoesn't breakDoesn't breakLightweightTotal system mass2 lbs3 lbsLoad-bearingTotal system mass + object10 lbs10 lbsNotifies homeowner promptlyClog-to-notification time5 min10 min
 
-##Future Development
+## Future Development
 
 
 Adaptable/universal enclosure for 5", 6", and 7" K-style gutters
@@ -94,7 +94,7 @@ More scalable database structure for users with many gutter systems
 UI improvements to pinpoint which section of a gutter is clogged
 
 
-##Team
+## Team
 
 
 Alex Huang
@@ -103,6 +103,6 @@ Sahej Sachdeva
 Benson Zhang
 
 
-##Acknowledgments
+## Acknowledgments
 
 Developed for the Design Thinking and Communication (DTC) program, McCormick School of Engineering and Applied Science, Northwestern University, under Professors Meghan Geigner and Zachary Berent.
